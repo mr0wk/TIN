@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            display: flex;
+            margin-top: 50px;
+	    justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <button id="btn">Click</button>
+        </div>
+    </div>
+</body>
+<script>
+    const button = document.getElementById("btn");
+    button.addEventListener("click", function () {
+        console.log("Button clicked!");
+    });
+</script>
+
+</html>

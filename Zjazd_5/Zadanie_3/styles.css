@@ -1,0 +1,74 @@
+body {
+    background-color: rgba(236,236,236,255);
+    margin: 0;
+}
+
+fieldset {
+    border-color: rgba(232,226,217,255);
+}
+
+form {
+    background-color: rgba(247,243,243,255);
+    box-shadow: 0 3px 3px 3px rgba(199,199,199,255);
+    margin: 40px 0 40px 0;
+    padding: 30px;
+}
+
+input[type=button] {
+    background-color: rgba(196,190,182,255);
+    color: white;
+    border: 0;
+}
+
+label {
+    margin-right: 10px;
+    text-align: right;
+}
+
+legend {
+    color: rgba(136,131,124,255);
+    font-size: 30px;
+}
+
+table {
+    background-color: rgba(247,243,243,255);
+    box-shadow: 0 3px 3px 3px rgba(199,199,199,255);
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(232,226,217,255);
+}
+
+td, th {
+    padding: 20px 20px 20px 20px;
+}
+
+.btn {
+    float: right;
+}
+
+.container {
+    margin: 20px 350px 20px 350px;
+}
+
+.form-fields {
+    display:grid;
+    font-size: 20px;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+
+.navbar {
+    background-color: rgba(232,226,217,255);
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 12px;
+    box-shadow: 0 3px 3px rgba(199,199,199,255);
+    text-align: center;
+    
+}

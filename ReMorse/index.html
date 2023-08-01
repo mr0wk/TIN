@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>ReMorse</title>
+</head>
+<body class="bg-light bg-gradient">
+    <div class="vertical-center content">
+        <header>
+            <img class="logo" src="media/logo.JPG" alt="logo">
+        </header>
+
+        <p class="about">
+            <img class="about-question-img" src="media/wordart.png" alt="question">
+            <br>
+            ReMorse is a highly responsive text converter created by <strong>Maksymilian Mrówka</strong> aka <strong>s25940</strong> which allows you to:
+            <ul>
+                <li>Encode...</li>
+                <li>...and decode using everyone's favorite Morse, affine and Vigenère ciphers!</li>
+            </ul>
+            To learn more about them, please use <a href="google.com">Google</a> and in the meantine, enjoy!
+        </p>
+
+        <select id="cipher">
+            <option value="morse" selected>Morse</option>
+            <option value="affine">Affine</option>
+            <option value="vigenere">Vigenère</option>
+        </select>
+
+        <select id="action">
+            <option value="encode">Encode</option>
+            <option value="decode">Decode</option>
+        </select>
+
+        <br>
+
+        <div class="affine-key-elements">
+            <label class="affine-key-el" for="a">a:</label>
+            <input class="affine-key-el" type="number" id="a" name="a" min="1" max="26" required>
+            <label class="affine-key-el" for="b">b:</label>
+            <input class="affine-key-el" type="number" id="b" name="b" min="1" max="26" required>
+        </div>
+
+        <div class="vigenere-key-elements">
+            <label class="vigenere-key-el" for="key">Key:</label>
+            <input class="vigenere-key-el vigenere-key-input" type="text" id="key" name="key" required>
+        </div>
+
+        <input type="file" id="load"/>
+
+        <br>
+
+        <div class="textareas">
+            <textarea id="input" cols="20" rows="20"></textarea>
+            <textarea id="output" cols="20" rows="20"></textarea>
+        </div>
+
+        <button onclick="cipherAction()">Convert</button>
+        <button onclick="downloadOutputAsTxtFile(output.value, 'output.txt')">Download</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

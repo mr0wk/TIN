@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+}
+
+h1 {
+    color: darkgreen;
+    letter-spacing: 10px;
+}
+
+span {
+    color: green;
+    font-size: 18px;
+    word-spacing: 3px;
+}
+
+.address {
+    font-size: 15px;
+    margin: 0;
+    text-align: right;
+}
+
+.container {
+    margin: 0 800px 0 800px;
+}
+
+.contact-header {
+    background-color: darkgreen;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.contact-name {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 0 10px 0 10px;
+}
+
+.contact-card {
+    box-shadow: inset;
+    margin-bottom: 20px;
+}
+
+.contact-body {
+    background-color: white;
+    margin-top: 0;
+    padding: 15px;
+}
+
+.email {
+    color: darkgreen;
+    margin: 0;
+    padding: 10px 0 5px 0;
+    text-align: left;
+}
+
+.phone-number {
+    margin: 0;
+    text-align: left;
+}

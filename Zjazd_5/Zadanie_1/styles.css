@@ -1,0 +1,33 @@
+body {
+    width: 700px;
+}
+
+.child {
+    background-color: lightgray;
+    border: 1px solid;
+    margin: 4px;
+    padding: 0 10px 0 10px;
+}
+
+.parent {
+    background-color: white;
+    border: 1px solid;
+    margin: 5px;
+}
+
+.grandparent {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 4px;
+}
+
+.great-grandparent {
+    padding: 2px;
+    background-color: white;
+}
+
+.great-great-grandparent {
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid;
+}

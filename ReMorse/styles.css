@@ -1,0 +1,50 @@
+textarea {
+    border-radius: 5px; 
+}
+
+.about-question-img {
+    width: 400px;
+}
+
+.affine-key-el {
+    display: none;
+}
+
+.affine-key-elements {
+    margin: 10px 0 10px 0;
+}
+
+.content {
+    padding: 10px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.textareas {
+    margin: 20px 0 20px 0;
+}
+
+.title {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.vertical-center {
+    max-width: 500px;
+    margin: auto;
+}
+
+.vigenere-key-el {
+    display: none;
+}
+
+.vigenere-key-elements {
+    margin: 10px 0 10px 0;
+}
+
+.vigenere-key-input {
+    width: 422px;
+}

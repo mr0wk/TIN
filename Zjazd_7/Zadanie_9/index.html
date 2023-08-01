@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Counting</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            margin: 10rem;
+        }
+
+        button {
+            margin: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+</body>
+<script>
+    const startButton = document.getElementById("start");
+    const stopButton = document.getElementById("stop");
+    let count = 10;
+    let counting;
+
+    startButton.addEventListener("click", startCounting);
+    stopButton.addEventListener("click", stopCounting);
+
+    function startCounting() {
+        counting = setInterval(() => {
+            if (count === 0) {
+                console.log("counting end");
+                clearInterval(counting);
+            } else {
+                console.log(count);
+                count--;
+            }
+        }, 1000);
+    }
+
+    function stopCounting() {
+        clearInterval(counting);
+        console.log("Counting stopped");
+    }
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+        }
+        .box{
+            color: #fff;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100px;
+            padding: 10px;
+            aspect-ratio: 1;
+        }
+        .box1{
+            background: rgb(203, 202, 202);
+        }
+        .box2{
+            background: rgb(145, 144, 144);
+        }
+        .box3{
+            background: rgb(117, 116, 116);
+        }
